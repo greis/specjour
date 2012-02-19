@@ -27,7 +27,7 @@ module Specjour
 
     def scrub
       connect_to_database
-      puts "Resetting database #{ENV['TEST_ENV_NUMBER']}…"
+      puts "Resetting database #{ENV['TEST_ENV_NUMBER']}"
       schema_load_task.invoke
     end
 
